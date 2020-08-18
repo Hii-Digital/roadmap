@@ -1,0 +1,49 @@
+{
+     "name": "hii/roadmap",
+     "description": "Default framework for new WordPress sites.",
+     "authors": [
+         {
+             "name": "Hii Digital",
+             "email": "developers@hiidigital.com",
+             "homepage": "https://www.hiidigital.com"
+         }
+     ],
+     "type": "project",
+     "repositories": [
+         {
+             "type": "composer",
+             "url": "https://wpackagist.org"
+         },
+         {
+             "type": "composer",
+             "url": "https://packages.situationinteractive.com"
+         }
+     ],
+     "config": {
+         "vendor-dir": "wp-content/vendor",
+         "sort-packages": true,
+         "optimize-autoloader": true
+     },
+     "autoload": {
+         "psr-4": {
+             "Theme\\": "wp-content/themes/roadmap/"
+         }
+     },
+     "require": {
+        "situation/advanced-custom-fields-pro": "dev-master",
+         "wp-sync-db/wp-sync-db": "dev-master",
+         "wp-sync-db/wp-sync-db-media-files": "dev-master",
+         "wpackagist-plugin/classic-editor": "*",
+         "wpackagist-plugin/wordpress-seo": "*",
+         "wpackagist-plugin/svg-support" : "*"
+     },
+     "scripts": {
+         "production": [
+               "composer install -o --no-dev"
+         ],
+         "develop": [
+              "composer install -o"
+         ]
+     }
+ }
+ 

@@ -1,0 +1,60 @@
+.blogs {
+     padding: $grid-gutter-width 0;
+}
+
+.posts {
+     &--testimonials {
+          .row {
+               .col-md-4 {
+                    &:first-child {
+                         .posts__item {
+                              border-left: none;
+                         }
+                    }
+               }
+          }
+          .posts__item {
+               background-color: transparent;
+               
+          }
+     }
+     .col-md-4 {
+          margin-bottom: $grid-gutter-width;
+     }
+     
+     &__item-outer {
+          margin-bottom: $grid-gutter-width*2;
+     }
+     &__item {
+          background-color: $white;
+          border-left: $primary solid 2px;
+          height: 100%;
+          padding: $grid-gutter-width;
+          position: relative;
+     }
+     &__item-image {
+          margin-bottom: $grid-gutter-width;
+          img {
+               width: 100%;
+          }
+     }
+     &__item-date {
+          text-align: right;
+          margin-bottom: $grid-gutter-width/2;
+     }
+     &__item-title {
+          @extend .h5;
+     }
+     &__bg {
+          @extend .h1;
+          color: $blue;
+          position: absolute;
+          top: $grid-gutter-width;
+          left: $grid-gutter-width;
+          opacity: 0.25;
+          z-index: -1;
+     }
+     &__read-more {
+          padding: $grid-gutter-width;
+     }
+}

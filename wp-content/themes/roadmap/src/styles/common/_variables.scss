@@ -1,0 +1,87 @@
+
+// Theme Colors
+$primary: #d02026;
+$primary-darker: #a21015;
+
+// Spacers
+$spacer: 1rem;
+
+// Colors
+$blue: #2680FF;
+$white: #fff;
+$gray-100: #FAFAFA !default;
+$gray-200: #eaeaea !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #c3c3c3 !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #5F5F5F !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$gray-blue: #797c88 !default;
+
+// Body
+$body-color: $gray-700;
+
+// Font Family
+$font-primary: 'Rubik';
+$font-secondary: $font-primary;
+$font-family-sans-serif: $font-primary, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif!default;
+
+// Font Sizes
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$h1-font-size-mobile: $font-size-base * 2 !default;
+$h2-font-size-mobile: $font-size-base * 1.75 !default;
+$h3-font-size-mobile: $font-size-base * 1.5 !default;
+$h4-font-size-mobile: $font-size-base * 1.25 !default;
+$h5-font-size-mobile: $font-size-base * 1.05 !default;
+$h6-font-size-mobile: $font-size-base !default;
+
+// Headings
+$headings-margin-bottom:      $spacer / 2 !default;
+$headings-font-family:        $font-secondary !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              $primary !default;
+$headings-letter-spacing:     1px !default;
+
+// Grid Columns
+$grid-gutter-width: 30px !default;
+$grid-row-columns: 6 !default;
+
+// Container Sizes
+$container-max-width-sm: 540px;
+$container-max-width-md: 720px;
+$container-max-width-lg: 960px;
+$container-max-width-xl: 1300px;
+$container-max-widths: (
+     sm: $container-max-width-sm,
+     md: $container-max-width-md,
+     lg: $container-max-width-lg,
+     xl: $container-max-width-xl
+) !default;
+
+$fluid-val-min-vw: $container-max-width-sm;
+$fluid-val-max-vw: $container-max-width-lg;
+
+// Line Heights
+$line-height-lg: 1.5 !default;
+$line-height-sm: 1.5 !default;
+
+// Links
+$link-color: $primary;
+$link-hover-color: $gray-600;
+$link-color-inverted: $gray-600;
+$link-color-hover-inverted: $primary;

@@ -1,0 +1,63 @@
+body {
+     background-color: $gray-200;
+}
+
+p {
+     &:last-child {
+          margin-bottom: 0;
+     }
+}
+
+.bg-color { 
+     &--transparent {
+          background-color: transparent; 
+     }
+     &--white {
+          background-color: $white; 
+     }
+     &--black {
+          background-color: $black;
+     }
+     &--primary {
+          background-color: $primary;
+     }
+     &--gray-lighter {
+          background-color: $gray-100;
+     }
+}
+
+.container-fluid {
+     max-width: $container-max-width-xl;
+     &--small {
+          max-width: 980px;
+     }
+     &--full {
+          max-width: 100%;
+     }
+}
+
+img {
+     @extend .img-fluid;
+}
+
+.relative {
+     position: relative;
+}
+
+.arrow {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+     margin: auto;
+     width: 100%;
+     max-width: 75px;
+     text-align: center;
+     display: inline-block;
+     @include media-breakpoint-up(sm) {
+          top: calc(100% + 25px);
+     }
+     img {
+          max-width: 10px;
+     }
+}

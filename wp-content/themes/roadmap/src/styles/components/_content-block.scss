@@ -1,0 +1,38 @@
+.content-block {
+     margin: $grid-gutter-width*2 0;
+     &--sidebar {
+          .content-block__content {
+               margin-bottom: $grid-gutter-width;
+          }
+     }
+     &__image {
+          box-shadow: $gray-400 1px 1px 7px;
+          img {
+               object-position: center;
+               object-fit: cover;
+               width: 100%;
+               height: 100%;
+          }
+     }
+     &__two {
+          margin: 0;
+     }
+     &__two-outer {
+          background-size: cover;
+          display: flex;
+          padding: $grid-gutter-width;
+     }
+     &__two-inner {
+          width: 100%;
+          text-align: center;
+          &--top {
+               align-self: flex-start;
+          }
+          &--center {
+               align-self: center;
+          }
+          &--flex-end {
+               align-self: flex-end;
+          }
+     }
+}

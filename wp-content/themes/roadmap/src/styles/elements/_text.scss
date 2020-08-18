@@ -1,0 +1,25 @@
+$min_width: 320px;
+$max_width: 1000px;
+$min_font: 16px;
+$max_font: 18px;
+
+.text {
+     &--default {
+          @include fluid-type($min_width, $max_width, 14px, 16px);
+     }
+     &--sm {
+          @include fluid-type($min_width, $max_width, 16px, 18px);
+     }
+     &--md {
+          @include fluid-type($min_width, $max_width, 18px, 22px);
+     }
+     &--lg {
+          @include fluid-type($min_width, $max_width, 20px, 24px);
+     }
+     &--xl {
+          @include fluid-type($min_width, $max_width, 24px, 38px);
+     }
+     &--uppercase {
+          text-transform: uppercase;
+     }
+}

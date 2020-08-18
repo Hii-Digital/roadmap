@@ -1,0 +1,62 @@
+.carousel {
+     &--dark {
+          background-color: $black;
+     }
+     &.carousel--light {
+          .glide__post-link h2 {
+               color: $black; 
+          }
+          .glide__post-link {
+               &:hover {
+                    h2 {
+                         color: $gray-700;
+                    }
+               }
+          }
+          .glide__bullet {
+               background-color: $gray-700;
+               &--active {
+                    background-color: $black;
+               }
+          }
+          .glide__arrow {
+               background-color: $black;
+          }
+     }
+
+     .col-12 {
+          padding: 75px;
+     }
+
+     .glide {
+          &__slide {
+               text-align: center;
+          }
+          &__bullets {
+               bottom: -25px;
+          }
+          &__arrow {
+               &--left {
+                    left: -50px;
+               }
+               &--right {
+                    right: -50px;
+               }
+          }
+          &__post-link {
+               img {
+                    margin-bottom: 15px;
+               }
+               h2 {
+                    @extend .text--md;
+                    color: $white;
+               }
+               &:hover {
+                    text-decoration: none;
+                    h2 {
+                         color: $gray-300;
+                    }
+               }
+          }
+     }
+}

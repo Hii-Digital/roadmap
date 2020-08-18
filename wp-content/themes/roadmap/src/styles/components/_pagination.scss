@@ -1,0 +1,17 @@
+.pagination {
+     @extend .h5;
+     text-align: center;
+     padding: $grid-gutter-width;
+     .page-numbers {
+          width: 25px;
+          display: inline-block;
+          margin-right: $grid-gutter-width/2;
+          &:last-child {
+               margin-right: 0;
+          }
+          &.current {
+               border-bottom: $primary solid 1px;
+               color: $primary;
+          }
+     }
+}

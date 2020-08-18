@@ -1,0 +1,16 @@
+.link {
+     transition: 300ms;
+     &--inverted {
+          color: $link-color-inverted;
+          &:hover {
+               color: $link-color-hover-inverted;
+          }
+     }
+     &--white {
+          color: $white;
+          &:hover {
+               color: $gray-400;
+               text-decoration: none;
+          }
+     }
+}

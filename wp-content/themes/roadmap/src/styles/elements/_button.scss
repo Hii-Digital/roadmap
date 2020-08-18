@@ -1,0 +1,36 @@
+$button-close-size: 40px;
+
+.button {
+     @extend .btn, .text--md;
+     &--link {
+          padding: 0;
+     }
+     &__primary {
+          background-color: $primary;
+          color: $white;
+          &:hover {
+               background-color: $primary-darker;
+               color: $white;
+          }
+     }
+     &__dark {
+          color: $white;
+          background-color: $black;
+          &:hover {
+               background-color: $primary-darker;
+               color: $white;
+          }
+     }
+     &__close {
+          width: $button-close-size;
+          height: $button-close-size;
+          position: absolute;
+          top: -$button-close-size/2;
+          right: -$button-close-size/2;
+          border-radius: 50%;
+          background: black;
+          color: white;
+          line-height: 1;
+          font-size: 26px;
+     }
+}

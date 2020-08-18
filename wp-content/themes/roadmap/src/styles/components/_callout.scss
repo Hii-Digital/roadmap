@@ -1,0 +1,17 @@
+.callout {
+     padding: $grid-gutter-width 0;
+     &--primary {
+          background-color: $primary;
+          color: $white
+     }
+     &--secondary {
+          background-color: $secondary;
+     }
+     &--black {
+          background-color: $black;
+          color: $white;
+     }
+     &--white {
+          background-color: $white;
+     }
+}
